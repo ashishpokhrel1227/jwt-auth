@@ -1,7 +1,7 @@
-from rest_framework import serializer
+from rest_framework import serializers
 from .models import Note
 
-class NoteSerializer(serializer.ModelSerializer):
+class NoteSerializer(serializers.ModelSerializer):
     class Meta:
         # fields = ('id', 'owner', 'title', 'content')
         fields = ('id', 'title', 'content')
